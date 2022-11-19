@@ -7,6 +7,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\TagController;
 use App\Models\Order;
+use App\Models\User;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
@@ -15,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/admin', function () {
     if (auth()->user()->role == 'Administrador')
         return view('admin.front-page', [
+            'users' => User::all(),
             'products' => Product::all(),
             'orders' => Order::all(),
         ]);
