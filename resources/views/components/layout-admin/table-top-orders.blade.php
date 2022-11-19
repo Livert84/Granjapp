@@ -1,4 +1,3 @@
-@props(['orders'])
 <div class="col-sm-12 col-md-12 col-lg-10">
     <div class="table-responsive">
         <table class="table align-middle table-dark table-striped text-center">

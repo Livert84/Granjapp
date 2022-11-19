@@ -1,4 +1,3 @@
-@props(['users'])
 <div class="col-sm-12 col-md-12 col-lg-6">
     <div class="table-responsive">
         <table class="table align-middle table-dark table-striped">
