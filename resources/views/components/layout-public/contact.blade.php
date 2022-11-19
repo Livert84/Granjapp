@@ -8,10 +8,7 @@
         <br>
         <h2 class="titulo display-3 border-bottom">Contacto</h2>
         <!--Section description-->
-        <p class="text-center text-light w-responsive mx-auto mt-5 fs-4">Do you have any questions? Please do not
-            hesitate to
-            contact us directly. Our team will come back to you within
-            a matter of hours to help you.</p>
+        <p class="text-center text-light w-responsive mx-auto mt-5 fs-4">Si quieres realizar cualquier consulta, reclamación o sugerencia, envíanos un mensaje a través del siguiente formulario o dirígete a nuestros teléfonos donde te atenderemos personalmente.</p>
 
         <div class="row mt-5 gx-5 justify-content-center">
 

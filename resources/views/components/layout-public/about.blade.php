@@ -1,15 +1,15 @@
-<div class="container py-5">
+<div class="container">
     <!-- About -->
-    <div id="about" class="row flex-lg-row-reverse align-items-center g-5 px-3 py-3" style="min-height: 50vh">
+    <div id="about" class="row flex-lg-row-reverse align-items-center g-5 px-3 py-3">
         <div class="col-10 col-sm-8 col-lg-6 mx-auto">
-            <img src="/images/about.jpg" class="d-flex  img-fluid rounded-3 mt-5 mx-auto"
-                alt="vista de la granja desde arriba" width="500" height="" loading="lazy">
+            <img src="/images/about.jpg" class="d-flex img-fluid rounded-3 mt-5 mx-auto"
+                alt="vista de la granja desde arriba" width="400px" loading="lazy">
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-4 mx-auto">
             <h1 class="titulo mt-0 display-4 mb-3 d-flex justify-content-center">Sobre<img
                     src="/images/granjapp-logo-white.png" alt="" class="ms-2 pb-3" style="height: 100px"></h1>
-            <p class="lead">Somos una comunidad de personas que desde más de 25 años con pasión y compromiso se dedíca
-                al sector agrario a través de las tecnologías más sostenibles.
+            <p class="text-muted">Somos una comunidad de personas que desde más de 25 años con pasión y compromiso se dedíca
+                al sector agrario utilizando las herramientas que adoptan las tecnologías más sostenibles.
                 <br>
 
 
@@ -18,16 +18,11 @@
         </div>
     </div>
     <!-- Features -->
-    <div id="features" class="row row-cols-1 row-cols-md-2 align-items-md-center g-0 p-4 bg-light bg-opacity-25">
-        <div class="d-flex flex-column align-items-center px-5 gap-2">
-            <h3 class="display-6 fs-3 fw-bold  text-success text-start">
-                Los mejores productos de la tierra
-                <br>
-                con los mejores servicios
-                <br>
-                en tu casa..Ya!
-            </h3>
-        </div>
+    <h3 class="display-6 fs-3 text-light text-center my-3">
+        Los mejores productos de la tierra con los mejores servicios en tu casa..Ya!
+    </h3>
+    <div id="features" class="row row-cols-1 row-cols-md-12 align-items-md-center g-0 p-4 bg-light bg-opacity-25">
+
         <div class="row row-cols-1 row-cols-sm-2 g-4 my-auto">
             <div class="d-flex flex-column gap-2">
                 <div class="d-inline-flex align-items-center justify-content-center text-primary text-bg-light p-3 fs-4 rounded-3 me-auto bg-opacity-75"
