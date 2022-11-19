@@ -47,26 +47,23 @@
             </div>
         </div>
 
-        @guest
+        <div class="container">
 
-            <x-layout-public.about />
+            @guest
 
-        @endguest
-        <!-- Products -->
-        <x-layout-public.products :products="$products"/>
+                <x-layout-public.about />
 
-        @guest
-        <!-- Events
-        <x-layout-public.events />
-        -->
-        <!-- Pricing
-        <x-layout-public.pricing />
-        -->
+            @endguest
+            <!-- Products -->
+            <x-layout-public.products :products="$products"/>
 
-        <!-- Contact -->
-        <x-layout-public.contact />
+            @guest
 
-        @endguest
+            <!-- Contact -->
+            <x-layout-public.contact />
+
+            @endguest
+        </div>
 
     </x-layout-public>
 </x-layout>

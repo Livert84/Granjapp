@@ -25,7 +25,7 @@
 
                                         <th scope="col">Producto</th>
                                         <th scope="col">Precio</th>
-                                        <th scope="col"></th>
+                                        <th scope="col">Uds</th>
                                         <th scope="col">Subtot</th>
                                     </tr>
                                 </thead>
