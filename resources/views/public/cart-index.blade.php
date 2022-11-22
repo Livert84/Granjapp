@@ -9,10 +9,14 @@
         @auth
 
             <div class="text-center mt-5 py-5">
-                <h4 class="titulo mt-2 fs-1">Tu carrito</h4>
+                <h4 class="titulo mt-2 fs-1"><i class="display-5 fa-solid fa-cart-shopping text-success">
+                </i></h4>
 
                 @if ($cart->products->count() == 0)
-                    <p>El carrito està vacío</p>
+                    <p class="titulo fs-4">El carrito està vacío</p>
+                    <div class="d-flex justify-content-center my-5">
+                        <a href="{{ route('show-products') }}" class="btn btn-success rounded-5">Vuelve a productos</a>
+                    </div>
                 @else
                     <div class="col-md-12 col-lg-12 col-xl-12 text-light text-center mx-1">
 

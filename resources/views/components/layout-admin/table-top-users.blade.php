@@ -27,17 +27,27 @@
 
             <tbody class="table-group-divider">
 
-                @foreach ($users->sortByDesc('orders')->take(10) as $user)
+                @foreach ($users->sortByDesc('orders')->take(5) as $user)
                     <tr class="text-center">
 
                         <td>
-                            {{ $user->id }}
+                            <a class="text-decoration-none text-light link-info" href="{{ route('admin-customer-orders', ['id' => $user->id]) }}">
+
+                                {{ $user->id }}
+                            </a>
                         </td>
                         <td>
-                            {{ $user->name }}
+                            <a class="text-decoration-none text-light link-info" href="{{ route('admin-customer-orders', ['id' => $user->id]) }}">
+
+                                {{ $user->name }}
+                            </a>
                         </td>
                         <td>
-                            {{ $user->orders->count() }}
+                            <a class="text-decoration-none text-light link-info" href="{{ route('admin-customer-orders', ['id' => $user->id]) }}">
+
+                                {{ $user->orders->count() }}
+
+                            </a>
                         </td>
 
                     </tr>

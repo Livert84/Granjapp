@@ -9,7 +9,7 @@ $cart = get_cart();
 
 
     <x-layout-public>
-        <div class="row g-5 my-5 px-2 py-3">
+        <div class="container mx-auto row g-5 my-5 px-2 py-3">
             <div class="col-md-5 col-lg-4 order-md-last">
                 <h4 class="d-flex justify-content-center align-items-center mb-3">
                     <span class="text-light fs-5">Tu carrito</span>
@@ -41,7 +41,7 @@ $cart = get_cart();
                                 $total += $subTot;
                             }
                         @endphp
-                            
+
                         <span>Total (EUR)</span>
                         <strong>{{ $total }} €</strong>
                     </li>
@@ -58,7 +58,7 @@ $cart = get_cart();
                         <div class="col-12">
                             <label for="address" class="form-label">Linea 1 de Dirección</label>
                             <input type="text" name="address" class="form-control" id="address"
-                                placeholder="Calle Falsa 123" required="">
+                                placeholder="Dirección" required="">
                         </div>
 
                         <div class="col-12">
@@ -68,26 +68,45 @@ $cart = get_cart();
                                 placeholder="Escalera, piso, puerta">
                         </div>
 
-                        <div class="col-md-5">
-                            <label for="country" class="form-label">País</label>
-                            <select name="country" class="form-select" id="country" required="">
-                                <option value="">Elige...</option>
-                                <option value="España">España</option>
-                                <option value="Andorra">Andorra</option>
-                                <option value="España">Nueva Zelanda</option>
+                        <div class="col-md-8">
+                            <label for="municipality" class="form-label">Municipio</label>
+                            <select name="municipality" class="form-select" id="municipality" required="">
+                                <option value="">Elegir Municipio</option>
+                                <option value="S/C de Tenerife">Adeje</option>
+                                <option value="S/C de Tenerife">Arafo</option>
+                                <option value="S/C de Tenerife">Arico</option>
+                                <option value="S/C de Tenerife">Arona</option>
+                                <option value="S/C de Tenerife">Buenavista del Norte</option>
+                                <option value="S/C de Tenerife">Candelaria</option>
+                                <option value="S/C de Tenerife">Fasnia</option>
+                                <option value="S/C de Tenerife">Garachico</option>
+                                <option value="S/C de Tenerife">Granadilla de Abona</option>
+                                <option value="S/C de Tenerife">La Guancha</option>
+                                <option value="S/C de Tenerife">Guía de Isora</option>
+                                <option value="S/C de Tenerife">Güímar</option>
+                                <option value="S/C de Tenerife">Icod de los Vinos</option>
+                                <option value="S/C de Tenerife">La Matanza de Acentejo</option>
+                                <option value="S/C de Tenerife">La Orotava</option>
+                                <option value="S/C de Tenerife">Puerto de la Cruz</option>
+                                <option value="S/C de Tenerife">Los Realejos</option>
+                                <option value="S/C de Tenerife">El Rosario</option>
+                                <option value="S/C de Tenerife">San Cristóbal de La Laguna</option>
+                                <option value="S/C de Tenerife">San Juan de la Rambla</option>
+                                <option value="S/C de Tenerife">San Miguel de Abona</option>
+                                <option value="S/C de Tenerife">Santa Cruz de Tenerife</option>
+                                <option value="S/C de Tenerife">Santa Úrsula</option>
+                                <option value="S/C de Tenerife">Santiago del Teide</option>
+                                <option value="S/C de Tenerife">El Sauzal</option>
+                                <option value="S/C de Tenerife">Los Silos</option>
+                                <option value="S/C de Tenerife">Tacoronte</option>
+                                <option value="S/C de Tenerife">El Tanque</option>
+                                <option value="S/C de Tenerife">Tegueste</option>
+                                <option value="S/C de Tenerife">La Victoria de Acentejo</option>
+                                <option value="S/C de Tenerife">Vilaflor de Chasna</option>
                             </select>
                         </div>
 
                         <div class="col-md-4">
-                            <label for="state" class="form-label">Provincia</label>
-                            <select name="state" class="form-select" id="state" required="">
-                                <option value="">Elige...</option>
-                                <option value="S/C de Tenerife">Santa Cruz de Tenerife</option>
-                                <option value="Las Palmas">Las Palmas</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-3">
                             <label for="zip" class="form-label">Código Postal</label>
                             <input type="text" name="zip" class="form-control" id="zip" placeholder="" required="">
                         </div>

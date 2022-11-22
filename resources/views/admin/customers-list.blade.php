@@ -25,16 +25,28 @@
                             <tr>
 
                                 <td>
-                                    {{ $user->id }}
+                                    <a class="text-decoration-none text-light link-info" href="{{ route('admin-customer-orders', ['id' => $user->id]) }}">
+                                        {{ $user->id }}
+
+                                    </a>
                                 </td>
                                 <td>
-                                    {{ $user->name }}
+                                    <a class="text-decoration-none text-light link-info" href="{{ route('admin-customer-orders', ['id' => $user->id]) }}">
+
+                                        {{ $user->name }}
+                                    </a>
                                 </td>
                                 <td>
-                                    {{ $user->email }}
+                                    <a class="text-decoration-none text-light link-info" href="{{ route('admin-customer-orders', ['id' => $user->id]) }}">
+
+                                        {{ $user->email }}
+                                    </a>
                                 </td>
                                 <td>
-                                    {{ $user->created_at }}
+                                    <a class="text-decoration-none text-light link-info" href="{{ route('admin-customer-orders', ['id' => $user->id]) }}">
+
+                                        {{ $user->created_at }}
+                                    </a>
                                 </td>
 
                             </tr>

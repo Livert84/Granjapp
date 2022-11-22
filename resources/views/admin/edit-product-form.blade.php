@@ -4,7 +4,7 @@
 >
     <x-layout-admin>
 
-        <div class="bg-transparent rounded-3">
+        <div class="container bg-transparent rounded-3">
             <h3 class="display-6 text-light text-center mb-3">Categoria {{ $product->category->name }}</h3>
             <div class="row justify-content-center">
 

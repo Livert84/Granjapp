@@ -21,7 +21,7 @@
 
                     <tbody class="table-group-divider">
 
-                        @foreach ($products as $product)
+                        @foreach ($products->sortByDesc('updated_at') as $product)
                             <tr>
 
                                 <td>

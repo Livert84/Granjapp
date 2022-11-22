@@ -25,19 +25,28 @@
                     <tr>
 
                         <td>
-
-                            {{ $order->id }}
-
+                            <a class="text-decoration-none text-light link-info" href="{{ route('admin-show-order', ['id' => $order->id]) }}">
+                                {{ $order->id }}
+                            </a>
                         </td>
 
                         <td>
-                            {{ $order->user->name }}
+                            <a class="text-decoration-none text-light link-info" href="{{ route('admin-show-order', ['id' => $order->id]) }}">
+
+                                {{ $order->user->name }}
+                            </a>
                         </td>
                         <td>
-                            {{ $order->total_price }} €
+                            <a class="text-decoration-none text-light link-info" href="{{ route('admin-show-order', ['id' => $order->id]) }}">
+
+                                {{ $order->total_price }} €
+                            </a>
                         </td>
                         <td>
-                            {{ $order->updated_at }}
+                            <a class="text-decoration-none text-light link-info" href="{{ route('admin-show-order', ['id' => $order->id]) }}">
+
+                                {{ $order->updated_at }}
+                            </a>
                         </td>
 
                     </tr>

@@ -52,6 +52,9 @@ Route::post('/admin/orders/send', [OrderController::class, 'processing_to_sent']
 
 //      -*- CUSTOMERS -*-
 Route::get('/admin/customers-list', [RegisteredUserController::class, 'list'])->name('list-customers');
+Route::get('/admin/order/{id}', [OrderController::class, 'admin_show_order'])->name('admin-show-order');
+Route::get('/admin/customer/{id}', [OrderController::class, 'admin_orders_list'])->name('admin-customer-orders');
+
 // Create
 Route::get('/admin/new-tag', [TagController::class, 'new_form'])->name('new-tag-form');
 Route::post('/admin/new-tag', [TagController::class, 'create'])->name('create-tag');

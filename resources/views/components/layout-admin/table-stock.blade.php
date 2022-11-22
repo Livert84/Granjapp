@@ -21,17 +21,22 @@
 
             <tbody class="table-group-divider">
 
-                @foreach ($products->sortBy('stock')->take(10) as $product)
+                @foreach ($products->sortBy('stock')->take(5) as $product)
                     <tr>
 
                         <td>
-
-                            {{ $product->name }}
+                            <a class="text-decoration-none text-light link-info"
+                                href="{{ route('edit-product-form', $product->id) }}">
+                                {{ $product->name }}
+                            </a>
 
                         </td>
 
                         <td>
-                            {{ $product->stock }}
+                            <a class="text-decoration-none text-light link-info"
+                                href="{{ route('edit-product-form', $product->id) }}">
+                                {{ $product->stock }}
+                            </a>
                         </td>
 
                     </tr>
@@ -42,4 +47,3 @@
 
     </div>
 </div>
-

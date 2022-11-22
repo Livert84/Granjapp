@@ -8,6 +8,14 @@
         <main class="col overflow-auto h-100">
             <div class="bg-light h-100 bg-opacity-50 rounded-3">
 
+                @if (session('status'))
+                    <div class="status d-flex">
+                        <span class="mx-auto my-5 bg-light text-success p-3 rounded-3 fs-4">
+                            {{ session('status') }}
+                        </span>
+                    </div>
+                @endif
+
                 {{ $slot }}
 
             </div>

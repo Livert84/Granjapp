@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Order;
+use App\Models\User;
+
 use App\Models\Product;
 
 class OrderController extends Controller
@@ -13,8 +15,7 @@ class OrderController extends Controller
         $validated = $request->validate([
             "address" => "required",
             "address2" => "",
-            "country" => "required",
-            "state" => "required",
+            "municipality" => "required",
             "zip" => "required|min:0|max:99999"
         ]);
 
@@ -23,8 +24,7 @@ class OrderController extends Controller
         $cart->delivery_address =
             $validated["address"] . ", " .
             $validated["address2"] . ", " .
-            $validated["country"] . ", " .
-            $validated["state"] . ", " .
+            $validated["municipality"] . ", " .
             $validated["zip"];
 
         $cart->status = "processing";
@@ -69,6 +69,18 @@ class OrderController extends Controller
 
         ]);
     }
+    public function admin_orders_list($id)
+    {
+        $user = User::findOrFail($id);
+
+
+        return view('admin.show-customer-orders', [
+
+            "user" => $user,
+
+
+        ]);
+    }
 
     public function show_order($id)
     {
@@ -79,6 +91,17 @@ class OrderController extends Controller
 
             "order" => $order,
 
+        ]);
+    }
+
+    public function admin_show_order($id)
+    {
+        $order = Order::findOrFail($id);
+
+
+        return view('admin.show-order', [
+
+            "order" => $order,
 
         ]);
     }

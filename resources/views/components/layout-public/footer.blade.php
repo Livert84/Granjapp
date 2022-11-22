@@ -1,8 +1,8 @@
-<div id="footer" class="container">
-    <footer class="py-5 px-5">
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-light">
+<div id="footer" class="px-3">
+    <footer class="pt-5 d-flex flex-column flex-sm-row justify-content-between pt-3 my-4 border-top text-light">
+
             <p>Copyright © 2022 GRANJAPP</p>
-            <ul class="list-unstyled d-flex mt-1">
+            <ul class="list-unstyled d-flex">
                 <li class="ms-3"><a class="link-light" href="#"><svg xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
                             <path
@@ -22,6 +22,6 @@
                         </svg></a>
                 </li>
             </ul>
-        </div>
+
     </footer>
 </div>

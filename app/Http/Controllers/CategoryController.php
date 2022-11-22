@@ -23,7 +23,7 @@ class CategoryController extends Controller
 
         Category::create($validated);
 
-        return redirect(route('admin-page'));
+        return redirect(route('admin-page'))->with('status', 'Categoria creada correctamente!');
     }
 
     public function list(Request $request)

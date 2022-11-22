@@ -9,10 +9,8 @@
             <h1 class="titulo mt-0 display-4 mb-3 d-flex justify-content-center">Sobre<img
                     src="/images/granjapp-logo-white.png" alt="" class="ms-2 pb-3" style="height: 100px"></h1>
             <p class="text-muted">Somos una comunidad de personas que desde más de 25 años con pasión y compromiso se dedíca
-                al sector agrario utilizando las herramientas que adoptan las tecnologías más sostenibles.
+                al sector agrario utilizando las tecnicas y herramientas que adoptan las tecnologías más sostenibles.
                 <br>
-
-
             </p>
 
         </div>

@@ -3,7 +3,7 @@
     <x-layout-admin>
 
         <div class="container">
-            <div class="row justify-content-center ">
+            <div class="row justify-content-center pt-5">
 
                 <x-layout-admin.table-top-orders :orders="$orders"/>
 

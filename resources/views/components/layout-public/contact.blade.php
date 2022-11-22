@@ -8,7 +8,9 @@
         <br>
         <h2 class="titulo display-3 border-bottom">Contacto</h2>
         <!--Section description-->
-        <p class="text-center text-light w-responsive mx-auto mt-5 fs-4">Si quieres realizar cualquier consulta, reclamación o sugerencia, envíanos un mensaje a través del siguiente formulario o dirígete a nuestros teléfonos donde te atenderemos personalmente.</p>
+        <p class="text-center text-light w-responsive mx-auto mt-5 fs-4">Si quieres realizar cualquier consulta,
+            reclamación o sugerencia, envíanos un mensaje a través del siguiente formulario o dirígete a nuestros
+            teléfonos donde te atenderemos personalmente.</p>
 
         <div class="row mt-5 gx-5 justify-content-center">
 
@@ -80,7 +82,7 @@
             <!--Grid column-->
 
             <!--Grid column-->
-            <div class="col-md-4 text-center text-light bg-success rounded-3 p-3 bg-opacity-50">
+            <div class="col-sm-12 col-md-4 text-center text-light bg-success rounded-3 p-3 bg-opacity-50">
                 <ul class="list-unstyled">
                     <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                             class="bi bi-signpost-2 mx-auto mt-2" viewBox="0 0 16 16">

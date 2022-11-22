@@ -20,7 +20,6 @@ class StoreController extends Controller
         return view('public.front-page', [
             'products' => Product::all(),
 
-
         ]);
     }
 
