@@ -71,26 +71,7 @@
                                 <input class="form-control" name="picture" type="file" id="picture">
                             </div>
                         </div>
-                        <!--
-                        <div class="mb-3">
-                            <h6>Etiquetas</h6>
-                            <div class="row">
-                                @foreach ($tags as $tag)
-                                    <div class="col-4">
-                                        <div class="form-check mt-1">
 
-                                            <label class="form-check-label" for="tag-{{ $tag->id }}">
-                                                <button type="button" class="btn btn-outline-info  btn-sm">
-
-                                                    <input class="form-button-input" type="button" name="tags[]"
-                                                        value="{{ $tag->name }}" id="tag-{{ $tag->id }}">
-                                                </button>
-                                            </label>
-                                        </div>
-                                    </div>
-                                @endforeach
-                            </div>
-                        </div> -->
 
                     </div>
                 </div>

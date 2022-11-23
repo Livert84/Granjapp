@@ -54,7 +54,7 @@
 
         </div>
         <div class="d-flex justify-content-center my-5">
-            <a href="{{ route('admin-page') }}" class="btn btn-success rounded-5">Atrás</a>
+            <a href="{{ route('list-customers') }}" class="btn btn-success rounded-5">Atrás</a>
         </div>
     </div>
 </div>

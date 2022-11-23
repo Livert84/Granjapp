@@ -15,12 +15,10 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // Create test users
-        // 2 Administrador
-        // 200 Cliente
-        // 12 Manager
-        // 40 VIP + Cliente
+        // 1 Administrador
+        // 100 Cliente
 
-
+        //  A D M I N  U S E R
 
         $admin_users = \App\Models\User::factory()->create([
             'name' => 'Liborio Dibilio',
@@ -30,7 +28,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'Administrador',
 
         ]);
-        // Create Cliente Users
+        //  C L I E N T  U S E R
 
         $client_users = \App\Models\User::factory(100)->create([
             'role' => 'Cliente'
@@ -42,6 +40,9 @@ class DatabaseSeeder extends Seeder
 
         //  P R O D U C T   S E E D E R
         $this->call(ProductSeeder::class);
+
+
+        //  O R D E R   S E E D E R
 
         $clients = \App\Models\User::where('role', 'Cliente')->get();
 

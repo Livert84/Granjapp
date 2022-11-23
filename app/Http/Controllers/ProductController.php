@@ -112,9 +112,7 @@ class ProductController extends Controller
 
         $product->update($validated);
 
-        return to_route('edit-product-form', [
-            'product' => $product,
-        ])->with('status', 'Producto actualizado correctamente!');
+        return to_route('list-products')->with('status', 'Producto actualizado correctamente!');
     }
 
     public function delete(Product $product)

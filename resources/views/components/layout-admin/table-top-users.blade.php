@@ -6,7 +6,7 @@
                 <i class="fa-solid fa-heart mx-2">
 
                 </i>
-                Top 10
+                Top 5
                 <br>
                 Clientes frecuentes
             </h1>
