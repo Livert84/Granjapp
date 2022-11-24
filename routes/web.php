@@ -32,7 +32,7 @@ Route::post('/admin/new-product', [ProductController::class, 'create'])->name('c
 // View
 Route::get('/admin/products', [ProductController::class, 'list'])->name('list-products');
 // Edit
-Route::get('/admin/{product}/edit', [ProductController::class, 'edit'])->name('edit-product-form');
+Route::get('/admin/{product}/editar', [ProductController::class, 'edit'])->name('edit-product-form');
 Route::patch('/admin/{product}/update', [ProductController::class, 'update'])->name('update-product');
 // Delete
 Route::delete('/admin/{product}/delete', [ProductController::class, 'delete'])->name('delete-product');

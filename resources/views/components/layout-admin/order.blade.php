@@ -1,8 +1,9 @@
 @props(['order'])
 
-<div class="container text-center mt-5 py-5">
+<div class="container text-center py-5">
 
-    <h4 class="titulo my-2 fs-1">Pedido n° {{ $order->id }}</h4>
+    <h4 class="titulo my-2 fs-1">{{ $order->user->name }}</h4>
+    <h6 class="titulo my-2 fs-3">Pedido n° {{ $order->id }}</h6>
 
     <div class="col-md-12 col-lg-12 col-xl-12 text-light text-center mx-1">
 

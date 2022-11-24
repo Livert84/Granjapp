@@ -45,7 +45,7 @@
                         <td>
                             <a class="text-decoration-none text-light link-info" href="{{ route('admin-customer-orders', ['id' => $user->id]) }}">
 
-                                {{ $user->orders->count() }}
+                                {{ $user->orders->where('status', '!=', 'cart')->count() }}
 
                             </a>
                         </td>

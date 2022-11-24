@@ -3,7 +3,7 @@
     <x-layout-public>
 
         <div class="container text-center mt-5 py-5">
-            @if (auth()->user()->orders->where('status', 'processing')->count() == 0)
+            @if (auth()->user()->orders->where('status', '!=', 'cart')->count() == 0)
                 <div class="container">
                     <p class="titulo fs-4">{{ auth()->user()->name }} aún no tienes pedidos</p>
                     <a href="{{ route('show-products') }}">
@@ -25,13 +25,14 @@
                                 <tr>
                                     <th scope="col"># Pedido</th>
                                     <th scope="col">Importe</th>
+                                    <th scope="col">Estado pedido</th>
                                     <th scope="col">Fecha</th>
                                 </tr>
                             </thead>
 
                             <tbody class="table-group-divider">
 
-                                @foreach ($orders->where('status', 'processing')->sortByDesc('id') as $order)
+                                @foreach ($orders->where('status', '!=', 'cart')->sortByDesc('id') as $order)
                                     <tr>
 
                                         <td>
@@ -45,6 +46,16 @@
                                             {{ $order->total_price }} €
                                         </td>
 
+                                        <td>
+                                            @if ($order->status == "processing")
+                                                <p>En proceso</p>
+                                            @else
+                                                <p>Enviado</p>
+                                            @endif
+
+
+
+                                        </td>
                                         <td>
                                             {{ $order->updated_at }}
                                         </td>

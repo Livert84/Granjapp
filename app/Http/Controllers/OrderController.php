@@ -48,7 +48,7 @@ class OrderController extends Controller
 
         $order->save();
 
-        return redirect(route('list-orders'));
+        return redirect(route('list-orders'))->with('status', 'El pedido ha sido enviado correctamente!');
     }
 
     public function list(Request $request)

@@ -1,7 +1,7 @@
-<div class="container text-center mt-5 py-5">
+<div class="container text-center py-5">
 
     <h4 class="titulo mt-2 fs-2">
-        {{ $user->name }} tiene un total de {{$user->orders->where('status', 'processing')->count()}} pedidos
+        {{ $user->name }} tiene un total de {{ $user->orders->where('status', '!=', 'cart')->count() }} pedidos
     </h4>
 
     <div class="col-md-12 col-lg-12 col-xl-12 text-light text-center mt-5">
@@ -14,24 +14,27 @@
                     <tr>
                         <th scope="col"># Pedido</th>
                         <th scope="col">Importe</th>
+                        <th scope="col">Estado</th>
                         <th scope="col">Fecha</th>
                     </tr>
                 </thead>
 
                 <tbody class="table-group-divider">
 
-                    @foreach ($user->orders->where('status', 'processing') as $order)
+                    @foreach ($user->orders->where('status', '!=', 'cart') as $order)
                         <tr>
 
                             <td>
-                                <a class="text-decoration-none text-dark link-info" href="{{ route('admin-show-order', ['id' => $order->id]) }}">
+                                <a class="text-decoration-none text-dark link-info"
+                                    href="{{ route('admin-show-order', ['id' => $order->id]) }}">
 
                                     {{ $order->id }}
                                 </a>
                             </td>
 
                             <td>
-                                <a class="text-decoration-none text-dark link-info" href="{{ route('admin-show-order', ['id' => $order->id]) }}">
+                                <a class="text-decoration-none text-dark link-info"
+                                    href="{{ route('admin-show-order', ['id' => $order->id]) }}">
 
                                     {{ $order->total_price }} €
 
@@ -39,7 +42,21 @@
                             </td>
 
                             <td>
-                                <a class="text-decoration-none text-dark link-info" href="{{ route('admin-show-order', ['id' => $order->id]) }}">
+                                <a class="text-decoration-none text-dark link-info"
+                                    href="{{ route('admin-show-order', ['id' => $order->id]) }}">
+
+                                    @if ($order->status == 'processing')
+                                        <p>En proceso</p>
+                                    @else
+                                        <p>Enviado</p>
+                                    @endif
+
+                                </a>
+                            </td>
+
+                            <td>
+                                <a class="text-decoration-none text-dark link-info"
+                                    href="{{ route('admin-show-order', ['id' => $order->id]) }}">
 
                                     {{ $order->updated_at }}
                                 </a>

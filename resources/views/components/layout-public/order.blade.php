@@ -13,7 +13,7 @@
                     <tr>
 
                         <th scope="col">Producto</th>
-                        <th scope="col">Precio</th>
+                        <th scope="col">Precio/Ud</th>
                         <th scope="col">Uds</th>
                         <th scope="col">Subtot</th>
                     </tr>

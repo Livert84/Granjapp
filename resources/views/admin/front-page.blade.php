@@ -3,7 +3,9 @@
     <x-layout-admin>
 
         <div class="container">
-            <div class="row justify-content-center pt-5">
+            <h1 class="fs-2 text-center text-muted py-3" style="letter-spacing: 3px">
+                Administración - Inicio</h1>
+            <div class="row justify-content-center">
 
                 <x-layout-admin.table-top-orders :orders="$orders"/>
 

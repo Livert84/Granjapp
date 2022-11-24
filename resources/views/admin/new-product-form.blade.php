@@ -5,7 +5,7 @@
     <x-layout-admin>
         <div class="col-12 col-md-12 col-lg-12 col-xl-11 p-5 text-center">
 
-            <h1 class="titulo display-5 my-4">Crear un nuevo producto</h1>
+            <h1 class="titulo  text-muted display-5 my-4">Crear nuevo producto</h1>
             <x-layout-admin.form-components.errors />
             <form action="{{ route('create-product') }}" method="post" enctype="multipart/form-data">
                 @csrf
