@@ -11,7 +11,7 @@
             <img src="/images/github-logo.png" class="mx-4 my-4" style="height: 100px" alt="">
             <img src="/images/nginx-logo.png" class="mx-4 my-4" style="height: 100px" alt="">
             <img src="/images/dbeaver-logo.png" class="mx-5 my-4" style="height: 100px" alt="">
-            <img src="/images/macOS-logo.png" class="mx-5 my-4" style="height: 100px" alt="">
+            <img src="/images/macos-logo.png" class="mx-5 my-4" style="height: 100px" alt="">
             <img src="/images/docker.png" class="mx-5 my-4" style="height: 90px" alt="">
             <img src="/images/postgresql-logo1.png" class="mx-4 my-4" style="height: 120px" alt="">
             <img src="/images/vite.png" class="mx-5 my-4" style="height: 100px" alt="">
