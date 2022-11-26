@@ -1,7 +1,7 @@
 <x-layout title="{{ $product->name }}" meta-description="Checkout meta description">
     <x-layout-public>
-        <div class="container bg-transparent text-start">
-            <div class="row text-center text-secondary my-4 g-5">
+        <div class="container bg-transparent text-center">
+            <div class="row text-center text-secondary my-4 g-5 mx-auto">
 
                 <h3 class="titulo display-6 mt-5">{{ $product->category->name }}</h3>
 
