@@ -1,6 +1,6 @@
 <div class="container">
     <!-- About -->
-    <div id="about" class="row flex-lg-row-reverse align-items-center g-5 px-3 py-3">
+    <div id="about" class="row flex-lg-row-reverse align-items-center g-5 px-3">
         <div class="col-10 col-sm-8 col-lg-6 mx-auto">
             <img src="/images/about.jpg" class="d-flex img-fluid rounded-3 mt-5 mx-auto"
                 alt="vista de la granja desde arriba" width="400px" loading="lazy">
@@ -16,12 +16,12 @@
         </div>
     </div>
     <!-- Features -->
-    <h3 class="display-6 fs-3 text-light text-center my-3">
+    <h3 class="display-5 fs-2 text-light text-center my-3">
         Los mejores productos de la tierra con los mejores servicios en tu casa..Ya!
     </h3>
     <div id="features" class="row row-cols-1 row-cols-md-12 align-items-md-center g-0 p-4 bg-light bg-opacity-25">
 
-        <div class="row row-cols-1 row-cols-sm-2 g-4 my-auto">
+        <div class="row row-cols-1 row-cols-lg-3 g-4 my-auto">
             <div class="d-flex flex-column gap-2">
                 <div class="d-inline-flex align-items-center justify-content-center text-primary text-bg-light p-3 fs-4 rounded-3 me-auto bg-opacity-75"
                     style="width: 55px; height:55px">

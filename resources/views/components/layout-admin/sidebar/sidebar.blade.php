@@ -40,7 +40,7 @@
                 ],
                 'Creditos' => [
                     'text' => 'Creditos',
-                    'icon' => 'fa-solid fa-folder-plus',
+                    'icon' => 'fa-brands fa-stack-overflow',
                     'url' => route(('credits')),
                 ],
 
