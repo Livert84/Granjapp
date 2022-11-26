@@ -3,8 +3,8 @@
     <x-layout-admin>
 
         <div class="container">
-            <h1 class="fs-2 text-center text-muted py-3" style="letter-spacing: 3px">
-                Administración - Inicio</h1>
+            <h1 class="titulo-f">
+                <i class="fa-solid fa-house-chimney"></i> Administración</h1>
             <div class="row justify-content-center">
 
                 <x-layout-admin.table-top-orders :orders="$orders"/>

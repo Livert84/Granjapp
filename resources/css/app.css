@@ -57,6 +57,15 @@ body,
     letter-spacing: 5px;
 
 }
+.titulo-f{
+    color:rgb(66, 65, 65);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-size: 3rem;
+
+}
 
 .image-centrada {
     background-position: center center;

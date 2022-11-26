@@ -1,7 +1,7 @@
 <x-layout title="Creditos" meta-description="Creditos meta description">
     <x-layout-admin>
 
-        <h1 class="text-center text-muted fs-1 py-5" style="letter-spacing: 0.25em;">Creditos</h1>
+        <h1 class="titulo-f"><i class="fa-brands fa-stack-overflow"></i> Creditos</h1>
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex flex-wrap justify-content-center px-5 mx-auto g-6">
 
             <img class="mx-5 my-4" src="/images/vscode.svg" alt="">
