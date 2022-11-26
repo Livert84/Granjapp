@@ -7,6 +7,7 @@
 
             <h1 class="titulo-f"><i class="fa-solid fa-circle-plus"></i> Nueva Categoría</h1>
             <x-layout-admin.form-components.errors />
+
             <form action="{{ route('create-category') }}" method="post">
                 @csrf
                 <div class="form-floating my-5">
