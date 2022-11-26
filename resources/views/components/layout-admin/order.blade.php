@@ -2,8 +2,8 @@
 
 <div class="container text-center py-5">
 
-    <h4 class="titulo my-2 fs-1">{{ $order->user->name }}</h4>
-    <h6 class="titulo my-2 fs-3">Pedido n° {{ $order->id }}</h6>
+    <h4 class="text-center fs-1 py-3" style="color:rgb(66, 65, 65); font-family: 'Signika', sans-serif;">{{ $order->user->name }}</h4>
+    <h6 class="text-center fs-1 pb-5" style="color:rgb(66, 65, 65); font-family: 'Signika', sans-serif;">Pedido n° {{ $order->id }}</h6>
 
     <div class="col-md-12 col-lg-12 col-xl-12 text-light text-center mx-1">
 

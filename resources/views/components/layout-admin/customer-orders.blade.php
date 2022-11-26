@@ -1,6 +1,6 @@
 <div class="container text-center py-5">
 
-    <h4 class="titulo mt-2 fs-2">
+    <h4 class="text-center fs-1 pb-5" style="color:rgb(66, 65, 65); font-family: 'Signika', sans-serif;">
         {{ $user->name }} tiene un total de {{ $user->orders->where('status', '!=', 'cart')->count() }} pedidos
     </h4>
 

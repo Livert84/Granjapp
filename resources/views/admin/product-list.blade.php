@@ -5,7 +5,8 @@
     <x-layout-admin>
 
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-light text-center ms-auto">
-            <h1 class="titleAdmin"><i class="fa-solid fa-cart-shopping"></i> Productos</h1>
+            <h1 class="text-center fs-1 py-5" style="color:rgb(66, 65, 65); font-family: 'Signika', sans-serif;">
+                <i class="fa-solid fa-cart-shopping"></i> Productos</h1>
 
             <!-- <h2 class="py-3 display-5">Lista productos</h2> -->
             <div class="table-responsive rounded-3">

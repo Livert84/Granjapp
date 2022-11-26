@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-lg py-5">
     <!-- About -->
     <div id="about" class="row flex-lg-row-reverse align-items-center g-5 px-3">
         <div class="col-10 col-sm-8 col-lg-6 mx-auto">
@@ -16,7 +16,7 @@
         </div>
     </div>
     <!-- Features -->
-    <h3 class="display-5 fs-2 text-light text-center my-3">
+    <h3 class="display-4 fs-2 text-light text-center py-5">
         Los mejores productos de la tierra con los mejores servicios en tu casa..Ya!
     </h3>
     <div id="features" class="row row-cols-1 row-cols-md-12 align-items-md-center g-0 p-4 bg-light bg-opacity-25">

@@ -11,8 +11,8 @@
                     </a>
                 </div>
             @else
-                <h4 class="titulo mt-2 fs-2">
-                    {{ auth()->user()->name }}: tus pedidos
+                <h4 class="text-center text-success fs-1 py-5" style="font-family: 'Signika', sans-serif;">
+                    {{ auth()->user()->name }} estos son tus pedidos:
                 </h4>
 
                 <div class="col-md-12 col-lg-12 col-xl-12 text-light text-center mt-5">

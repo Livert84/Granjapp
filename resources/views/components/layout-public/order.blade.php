@@ -2,7 +2,7 @@
 
 <div class="container text-center mt-5 py-5">
 
-    <h4 class="titulo my-2 fs-1">Pedido n° {{ $order->id }}</h4>
+    <h4 class="text-center text-success fs-1 py-5" style="font-family: 'Signika', sans-serif;">Pedido n° {{ $order->id }}</h4>
 
     <div class="col-md-12 col-lg-12 col-xl-12 text-light text-center mx-1">
 

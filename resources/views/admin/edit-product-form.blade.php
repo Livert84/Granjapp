@@ -5,7 +5,8 @@
     <x-layout-admin>
 
         <div class="container bg-transparent rounded-3">
-            <h3 class="display-6 text-light text-center mb-3">Categoria {{ $product->category->name }}</h3>
+            <h3 class="text-center fs-1 py-5" style="color:rgb(66, 65, 65); font-family: 'Signika', sans-serif;">
+                Categoria {{ $product->category->name }}</h3>
             <div class="row justify-content-center">
 
                 <div class="col-12 col-lg-5 text-center bg-light my-1 rounded-3 me-4">
