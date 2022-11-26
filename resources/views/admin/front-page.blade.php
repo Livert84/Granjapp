@@ -3,7 +3,7 @@
     <x-layout-admin>
 
         <div class="container">
-            <h1 class="titulo2">
+            <h1 class="titleAdmin">
                 <i class="fa-solid fa-house-chimney"></i> Administración</h1>
             <div class="row justify-content-center">
 

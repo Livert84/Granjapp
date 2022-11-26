@@ -5,7 +5,7 @@
     <x-layout-admin>
         <div class="col-12 col-md-12 col-lg-12 col-xl-11 p-5 text-center">
 
-            <h1 class="titulo2"><i class="fa-solid fa-circle-plus"></i> Nueva Categoría</h1>
+            <h1 class="titleAdmin"><i class="fa-solid fa-circle-plus"></i> Nueva Categoría</h1>
             <x-layout-admin.form-components.errors />
 
             <form action="{{ route('create-category') }}" method="post">
