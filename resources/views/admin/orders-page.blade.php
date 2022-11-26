@@ -1,7 +1,7 @@
 <x-layout title="Pedidos" meta-description="Pedidos meta description">
     <x-layout-admin>
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-light text-center ms-auto">
-            <h1 class="titulo-f"><i class="fa-solid fa-list"></i> Pedidos</h1>
+            <h1 class="titulo2"><i class="fa-solid fa-list"></i> Pedidos</h1>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-muted active" id="processing-tab" data-bs-toggle="tab"
