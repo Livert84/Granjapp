@@ -43,11 +43,22 @@
                                         </td>
 
                                         <td>
-                                            {{ $order->total_price }} €
+                                            @php
+                                                $total = 0;
+                                                foreach ($order->products as $product) {
+                                                    $recuento = 0;
+                                                    $recuento += $product->pivot->units;
+                                                    $subTot = $product->price * $recuento;
+                                                    $total += $subTot;
+                                                }
+                                            @endphp
+
+
+                                            {{ $total }} €
                                         </td>
 
                                         <td>
-                                            @if ($order->status == "processing")
+                                            @if ($order->status == 'processing')
                                                 <p>En proceso</p>
                                             @else
                                                 <p>Enviado</p>
