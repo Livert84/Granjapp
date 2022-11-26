@@ -43,6 +43,11 @@ class StoreController extends Controller
         return view('public.events');
     }
 
+    public function credits()
+    {
+        return view('admin.credits');
+    }
+
     public function checkout_page(Request $request) {
 
         return view('public.checkout-page');

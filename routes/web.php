@@ -55,11 +55,11 @@ Route::get('/admin/customers-list', [RegisteredUserController::class, 'list'])->
 Route::get('/admin/order/{id}', [OrderController::class, 'admin_show_order'])->name('admin-show-order');
 Route::get('/admin/customer/{id}', [OrderController::class, 'admin_orders_list'])->name('admin-customer-orders');
 
-// Create
-Route::get('/admin/new-tag', [TagController::class, 'new_form'])->name('new-tag-form');
-Route::post('/admin/new-tag', [TagController::class, 'create'])->name('create-tag');
-// View
-Route::get('/admin/tags', [TagController::class, 'list'])->name('list-tags');
+//      -*- CREDITS -*-
+
+Route::get('/admin/credits', [StoreController::class, 'credits'])->name('credits');
+
+
 
 
 

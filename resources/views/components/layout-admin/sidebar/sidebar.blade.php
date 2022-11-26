@@ -38,6 +38,11 @@
                     'icon' => 'fa-solid fa-folder-plus',
                     'url' => route('new-category-form'),
                 ],
+                'Creditos' => [
+                    'text' => 'Creditos',
+                    'icon' => 'fa-solid fa-folder-plus',
+                    'url' => route(('credits')),
+                ],
 
             ];
         @endphp
