@@ -36,7 +36,18 @@
                                 <a class="text-decoration-none text-dark link-info"
                                     href="{{ route('admin-show-order', ['id' => $order->id]) }}">
 
-                                    {{ $order->total_price }} €
+                                    @php
+                                        $total = 0;
+                                        foreach ($order->products as $product) {
+                                            $recuento = 0;
+                                            $recuento += $product->pivot->units;
+                                            $subTot = $product->price * $recuento;
+                                            $total += $subTot;
+                                        }
+                                    @endphp
+
+
+                                    {{ $total }} €
 
                                 </a>
                             </td>
