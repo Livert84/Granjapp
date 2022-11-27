@@ -8,9 +8,8 @@
 
         @auth
 
-            <div class="text-center mt-5 py-5">
-                <h4 class="titulo mt-2 fs-1"><i class="display-5 fa-solid fa-cart-shopping text-success">
-                </i></h4>
+
+            <div class="container text-center mt-5 py-5 d-flex justify-content-center">
 
                 @if ($cart->products->count() == 0)
                     <p class="titulo fs-4">El carrito està vacío</p>
@@ -18,10 +17,11 @@
                         <a href="{{ route('show-products') }}" class="btn btn-success rounded-5">Vuelve a productos</a>
                     </div>
                 @else
-                    <div class="col-md-12 col-lg-12 col-xl-12 text-light text-center mx-1">
-
+                    <div class="col-md-12 col-lg-10 col-xl-10 text-light text-center">
+                        <h4 class="titulo fs-1"><i class="display-5 fa-solid fa-cart-shopping text-success">
+                        </i></h4>
                         <!-- <h2 class="py-3 display-5">Lista productos</h2> -->
-                        <div class="table-responsive rounded-3">
+                        <div class="table-responsive rounded-3 mt-5">
                             <table class="table align-middle table-light table-striped">
 
                                 <thead>
@@ -48,8 +48,7 @@
                                             <td>
                                                 <div class="btn-group btn-group-md mx-0 align-items-center">
                                                     @auth
-                                                        <form
-                                                            action="{{ route('rem-one-from-cart', ['id' => $product->id]) }}"
+                                                        <form action="{{ route('rem-one-from-cart', ['id' => $product->id]) }}"
                                                             method="post">
                                                             @csrf
 
@@ -67,8 +66,7 @@
                                                             class="form-control align-items-center text-center bg-transparent rounded-3 border-none"
                                                             style="width:50px;" value="{{ $product->pivot->units }}">
 
-                                                        <form
-                                                            action="{{ route('add-one-to-cart', ['id' => $product->id]) }}"
+                                                        <form action="{{ route('add-one-to-cart', ['id' => $product->id]) }}"
                                                             method="post">
                                                             @csrf
 
@@ -115,8 +113,9 @@
                                 </tfoot>
                             </table>
 
-                            <div class="d-flex justify-content-evenly">
-                                <a href="{{ route('show-products') }}" class="btn btn-success rounded-5">Vuelve a productos</a>
+                            <div class="d-flex justify-content-evenly pt-5">
+                                <a href="{{ route('show-products') }}" class="btn btn-success rounded-5">Vuelve a
+                                    productos</a>
                                 <a href="{{ route('checkout') }}" class="btn btn-success rounded-5">Ir a la caja</a>
 
                             </div>
