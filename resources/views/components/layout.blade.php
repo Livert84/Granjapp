@@ -7,6 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Granjapp.es ~ {{ $title ?? '' }}</title>
     <meta name="description" content="{{ $metaDescription ?? 'Default meta description' }}">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XLJ8PJZ9NP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XLJ8PJZ9NP');
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png" />
